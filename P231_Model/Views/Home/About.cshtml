@@ -1,0 +1,26 @@
+﻿<h3>
+    About page
+</h3>
+
+<ul>
+    <li>
+        <h1>
+            ViewBag
+        </h1>
+        @ViewBag.ProductName
+    </li>
+
+    <li>
+        <h1>
+            ViewData
+        </h1>
+        @((string)ViewData["Ram"])
+    </li>
+    <li>
+        <h1>
+            TempData
+        </h1>
+        @TempData["Username"]
+    </li>
+
+</ul>

@@ -1,0 +1,58 @@
+﻿@using P231_Model.Model
+
+@{
+    //Product product = ViewBag.Product;
+    //var ram = (string)ViewData["Ram"];
+    //var user = ViewData["User"] as User;
+}
+@if (TempData["Success"] != null)
+{
+    <ul>
+        <li>
+            <h4>
+                @TempData["Success"]
+            </h4>
+        </li>
+    </ul>
+}
+
+<h4>
+    Home page
+</h4>
+
+
+<ul>
+    <li>
+        <h2>ViewBag</h2>
+    </li>
+    <li>
+        
+        @ViewBag.ProductName
+    </li>
+    <li>
+        @ViewBag.ProductPrice
+    </li>
+    <li>
+        @*@product.Name => @product.Price*@
+    </li>
+    <li>
+        <h2>
+            ViewData
+        </h2>
+    </li>
+    <li>
+        @*@ram*@
+    </li>
+    <li>
+        @*@(user == null ? "Not found" : user!.Username)*@
+    </li>
+
+    <li>
+        <h2>
+            Temporary Data
+        </h2>
+    </li>
+    <li>
+        @TempData["Username"]
+    </li>
+</ul>
